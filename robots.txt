@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrewleko19-boop.github.io/portfolio/sitemap.xml

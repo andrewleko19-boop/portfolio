@@ -1,182 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Hasan — Full-Stack Developer</title>
-  <meta name="description" content="Mohamed Hasan — Full-Stack Developer & CS Student at AASTMT Lattakia, Syria. Building real-world web apps: Ruqi (national school attendance system) and UniManager (a PWA for university students).">
+  <meta name="description" content="Mohamed Hasan — Full-Stack Developer & CS student at AASTMT, Lattakia, Syria. Builds offline-first PWAs with vanilla JS, Supabase & PostgreSQL: UniManager and Ruqi (national school attendance for the Syrian Ministry of Education).">
   <meta name="author" content="Mohamed Hasan">
+  <meta name="keywords" content="Mohamed Hasan, Full-Stack Developer, Vanilla JS, Supabase, PostgreSQL, PWA, Offline-first, Syria, AASTMT, UniManager, Ruqi, NSAMS">
+  <meta name="theme-color" content="#0a0f1a">
+  <link rel="canonical" href="https://andrewleko19-boop.github.io/portfolio/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrewleko19-boop.github.io/portfolio/">
   <meta property="og:title" content="Mohamed Hasan — Full-Stack Developer">
-  <meta property="og:description" content="CS student building real-world web apps with vanilla JS, Supabase, and PostgreSQL.">
+  <meta property="og:description" content="CS student shipping real-world web apps with vanilla JS, Supabase & PostgreSQL. Offline-first PWAs, Arabic RTL, no build step.">
+  <meta property="og:image" content="https://andrewleko19-boop.github.io/portfolio/assets/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohamed Hasan — Full-Stack Developer">
+  <meta name="twitter:description" content="CS student shipping real-world web apps with vanilla JS, Supabase & PostgreSQL. Offline-first PWAs, Arabic RTL, no build step.">
+  <meta name="twitter:image" content="https://andrewleko19-boop.github.io/portfolio/assets/og-image.svg">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Hasan",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://andrewleko19-boop.github.io/portfolio/",
+    "email": "mailto:mh6127880@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lattakia", "addressCountry": "SY" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "AASTMT — Arab Academy for Science, Technology & Maritime Transport" },
+    "knowsAbout": ["Vanilla JavaScript", "Supabase", "PostgreSQL", "Row-Level Security", "Progressive Web Apps", "Offline-first", "Arabic RTL UI"],
+    "sameAs": ["https://github.com/andrewleko19-boop"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Cairo:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+  <div class="spotlight" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Primary">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">MH</span>
+      <a class="brand" href="#top" aria-label="Mohamed Hasan — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <defs>
+              <linearGradient id="b-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="15" fill="url(#b-grad)"/>
+            <text x="32" y="29" font-family="'JetBrains Mono',monospace" font-size="25" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central" letter-spacing="-0.5">MH</text>
+            <path d="M24 42 L29 47 L24 52" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <rect x="32" y="49.5" width="9" height="3" rx="1.5" fill="#fff"/>
+          </svg>
+        </span>
         <span class="brand-name">Mohamed Hasan</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle color theme" aria-pressed="false">
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
-        </svg>
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
-        </svg>
-      </button>
+
+      <div class="nav-actions">
+        <button class="icon-btn term-trigger" type="button" id="termTrigger" data-i18n-aria="a11y.terminal" aria-label="Open command terminal (press /)">
+          <span class="term-glyph" aria-hidden="true">&gt;_</span>
+        </button>
+        <button class="icon-btn lang-toggle" type="button" id="langToggle" data-i18n-aria="a11y.lang" aria-label="Switch language">
+          <span id="langLabel">AR</span>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" id="themeToggle" data-i18n-aria="a11y.theme" aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn nav-burger" type="button" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section class="hero container" aria-labelledby="hero-title">
-      <p class="hero-eyebrow reveal">Full-Stack Developer &amp; CS Student</p>
-      <h1 class="hero-title reveal" id="hero-title">Mohamed Hasan</h1>
-      <p class="hero-subtitle reveal">Full-Stack Developer &amp; CS Student at AASTMT Lattakia, Syria</p>
-      <p class="hero-tagline reveal">I build real-world web apps end to end — vanilla JS on the front, Supabase and
-        PostgreSQL on the back — with a focus on offline-first PWAs and Arabic RTL interfaces.</p>
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-ghost" href="mailto:mh6127880@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener">GitHub</a>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow reveal">
+          <span class="mono">&gt; </span><span data-i18n="hero.eyebrow">full-stack developer &amp; cs student</span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <h1 class="hero-title reveal" id="hero-title"><span class="gradient-text">Mohamed Hasan</span></h1>
+        <p class="hero-typed reveal mono" aria-live="polite">
+          <span class="prompt" aria-hidden="true">~/ $ </span><span id="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero-tagline reveal" data-i18n="hero.tagline">
+          I build real-world web apps end to end — vanilla JS on the front, Supabase and PostgreSQL on the
+          back. Two shipped products: a national attendance system for the Syrian Ministry of Education,
+          and an offline-first PWA used by university students.
+        </p>
+        <div class="hero-status reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="mono" data-i18n="hero.status">online · last shipped: UniManager groups</span>
+        </div>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary magnetic" href="#projects" data-i18n="hero.cta.projects">View Projects</a>
+          <a class="btn btn-ghost magnetic" href="resume.html" data-i18n="hero.cta.cv">Download CV</a>
+          <a class="btn btn-ghost magnetic" href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener" data-i18n="hero.cta.github">GitHub</a>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ===== Stats ===== -->
+    <section class="section stats-section container" aria-label="Key numbers">
+      <ul class="stats">
+        <li class="stat reveal"><span class="stat-num mono" data-count="2">0</span><span class="stat-label" data-i18n="stats.apps">Apps shipped</span></li>
+        <li class="stat reveal"><span class="stat-num mono" data-count="7">0</span><span class="stat-label" data-i18n="stats.grading">Grading systems</span></li>
+        <li class="stat reveal"><span class="stat-num mono" data-count="4">0</span><span class="stat-label" data-i18n="stats.types">Computation types</span></li>
+        <li class="stat reveal"><span class="stat-num mono" data-count="4">0</span><span class="stat-label" data-i18n="stats.portals">Portal tiers</span></li>
+        <li class="stat reveal"><span class="stat-num mono" data-count="7500" data-suffix="+">0</span><span class="stat-label" data-i18n="stats.loc">Lines in one file</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== About ===== -->
     <section class="section container" id="about" aria-labelledby="about-title">
-      <h2 class="section-title reveal" id="about-title">About</h2>
+      <h2 class="section-title reveal" id="about-title"><span class="title-index mono">01.</span> <span data-i18n="about.title">About</span></h2>
       <div class="about-grid">
-        <p class="about-text reveal">
-          CS student building real-world web apps. Currently developing <strong>Ruqi</strong> — a
-          national school attendance system for the Syrian Ministry of Education — and
-          <strong>UniManager</strong>, a PWA for university students. I like shipping small, fast,
-          dependency-light apps that work offline and read naturally in both Arabic and English.
-        </p>
+        <div class="reveal">
+          <p class="about-text" data-i18n="about.p1">
+            I'm a Computer Engineering / CS student at AASTMT in Lattakia, Syria, who likes shipping. I build
+            small, fast, dependency-light apps that work offline and read naturally in both Arabic and English.
+          </p>
+          <p class="about-text" data-i18n="about.p2">
+            My current focus is offline-first PWAs backed by Supabase and PostgreSQL with Row-Level Security —
+            real auth, real realtime, real data isolation — without reaching for a framework or a build step.
+          </p>
+          <ul class="chips" aria-label="Interests">
+            <li class="chip" data-i18n="about.chip.offline">Offline-first</li>
+            <li class="chip" data-i18n="about.chip.realtime">Realtime</li>
+            <li class="chip" data-i18n="about.chip.rls">RLS</li>
+            <li class="chip" data-i18n="about.chip.rtl">RTL &amp; i18n</li>
+            <li class="chip" data-i18n="about.chip.pwa">PWA</li>
+          </ul>
+        </div>
         <ul class="about-facts reveal">
-          <li><span class="fact-label">Location</span><span class="fact-value">Lattakia, Syria</span></li>
-          <li><span class="fact-label">Studying</span><span class="fact-value">Computer Science, AASTMT</span></li>
-          <li><span class="fact-label">Focus</span><span class="fact-value">PWAs · Supabase · RTL UI</span></li>
-          <li><span class="fact-label">Build style</span><span class="fact-value">Vanilla JS, no build step</span></li>
+          <li><span class="fact-label" data-i18n="about.fact.location">Location</span><span class="fact-value">Lattakia, Syria</span></li>
+          <li><span class="fact-label" data-i18n="about.fact.studying">Studying</span><span class="fact-value" data-i18n="about.fact.studying.val">Computer Engineering, AASTMT</span></li>
+          <li><span class="fact-label" data-i18n="about.fact.focus">Focus</span><span class="fact-value">PWAs · Supabase · RTL</span></li>
+          <li><span class="fact-label" data-i18n="about.fact.build">Build style</span><span class="fact-value" data-i18n="about.fact.build.val">Vanilla JS, no build</span></li>
+          <li><span class="fact-label" data-i18n="about.fact.email">Email</span><a class="fact-value" href="mailto:mh6127880@gmail.com">mh6127880@gmail.com</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- ===== Projects ===== -->
     <section class="section container" id="projects" aria-labelledby="projects-title">
-      <h2 class="section-title reveal" id="projects-title">Projects</h2>
-      <div class="projects">
+      <h2 class="section-title reveal" id="projects-title"><span class="title-index mono">02.</span> <span data-i18n="projects.title">Projects</span></h2>
 
-        <article class="project-card project-card--ruqi reveal">
-          <div class="project-head">
-            <h3 class="project-name">Ruqi</h3>
-            <span class="project-kicker">National School Attendance Monitoring System</span>
+      <!-- UniManager -->
+      <article class="project reveal" data-accent="cyan">
+        <div class="project-media tilt">
+          <div class="phones">
+            <img class="phone phone-back-1" src="https://raw.githubusercontent.com/andrewleko19-boop/unimanager/main/docs/screenshots/group-chat.png" alt="UniManager real-time group chat with a PDF file attachment" loading="lazy" decoding="async" width="270" height="600">
+            <img class="phone phone-back-2" src="https://raw.githubusercontent.com/andrewleko19-boop/unimanager/main/docs/screenshots/schedule.png" alt="UniManager weekly schedule with color-coded lecture types" loading="lazy" decoding="async" width="270" height="600">
+            <img class="phone phone-front" src="https://raw.githubusercontent.com/andrewleko19-boop/unimanager/main/docs/screenshots/gpa.png" alt="UniManager GPA calculator showing the US 4.0 grading system" loading="lazy" decoding="async" width="270" height="600">
           </div>
-          <p class="project-desc">
-            Built for the Syrian Ministry of Education. A multi-portal web app that connects the four
-            tiers of a national school system — teacher → school → directorate → ministry (plus parent
-            and admin portals) — around one shared source of truth for daily attendance and field
-            reports. Backed by Supabase with extensive PostgreSQL Row-Level Security, automated with
-            GitHub Actions CI/CD, and built Arabic-first with a full RTL UI.
+        </div>
+        <div class="project-body">
+          <span class="project-kicker mono" data-i18n="projects.uni.kicker">Offline-first PWA · Live in production</span>
+          <h3 class="project-name">UniManager</h3>
+          <p class="project-desc" data-i18n="projects.uni.desc">
+            The app that replaces everything a university student juggles — schedule, a config-driven GPA engine
+            spanning 7 grading systems and 4 computation types, exams with countdowns, notes, tasks, Pomodoro and
+            study logging, sleep and attendance tracking. Plus real-time collaborative groups: invite codes,
+            synced schedules, shared exams, live chat with file attachments and admin permissions. Bilingual
+            AR/EN, full RTL.
           </p>
+          <ul class="highlights">
+            <li class="mono"><b>7</b> <span data-i18n="projects.uni.h1">grading systems</span></li>
+            <li class="mono"><b>4</b> <span data-i18n="projects.uni.h2">computation types</span></li>
+            <li class="mono"><b>~7.5K</b> <span data-i18n="projects.uni.h3">lines, one file</span></li>
+            <li class="mono"><b>Android</b> <span data-i18n="projects.uni.h4">TWA shipped</span></li>
+          </ul>
           <ul class="tags">
-            <li>Vanilla JS</li>
-            <li>Supabase</li>
-            <li>PostgreSQL (RLS)</li>
-            <li>GitHub Pages</li>
-            <li>Arabic RTL UI</li>
+            <li>PWA</li><li>Supabase</li><li>PostgreSQL · RLS</li><li>IndexedDB sync queue</li>
+            <li>Service Worker</li><li>Sentry</li><li>Vanilla JS</li>
           </ul>
           <div class="project-links">
-            <a class="btn btn-small btn-primary" href="https://github.com/andrewleko19-boop/nsams" target="_blank" rel="noopener">Source</a>
-            <a class="btn btn-small btn-ghost" href="https://andrewleko19-boop.github.io/nsams/" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn btn-small btn-primary magnetic" href="https://unimanager-sy.pages.dev" target="_blank" rel="noopener" data-i18n="projects.live">Live demo</a>
+            <a class="btn btn-small btn-ghost magnetic" href="https://github.com/andrewleko19-boop/unimanager" target="_blank" rel="noopener" data-i18n="projects.source">Source</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="project-card project-card--uni reveal">
-          <div class="project-head">
-            <h3 class="project-name">UniManager</h3>
-            <span class="project-kicker">University Student Manager</span>
+      <!-- Ruqi -->
+      <article class="project project--reverse reveal" data-accent="green">
+        <div class="project-media tilt">
+          <!-- Designed mockup (no real screenshots exist) -->
+          <div class="browser" aria-label="Ruqi system overview illustration" role="img">
+            <div class="browser-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="browser-url mono">andrewleko19-boop.github.io/nsams</span>
+            </div>
+            <div class="browser-body ruqi-scene">
+              <img class="ruqi-eagle" src="https://raw.githubusercontent.com/andrewleko19-boop/nsams/main/icons/eagle-mark.png" alt="" aria-hidden="true" loading="lazy" decoding="async" width="64" height="64">
+              <div class="ruqi-map" aria-hidden="true">
+                <span class="pin pin-g" style="top:22%;left:30%"></span>
+                <span class="pin pin-a" style="top:48%;left:58%"></span>
+                <span class="pin pin-g" style="top:64%;left:24%"></span>
+                <span class="pin pin-r" style="top:34%;left:74%"></span>
+                <span class="pin pin-g" style="top:74%;left:62%"></span>
+              </div>
+              <ol class="ruqi-ladder mono" aria-hidden="true">
+                <li>teacher</li><li>school</li><li>directorate</li><li>ministry</li>
+              </ol>
+            </div>
           </div>
-          <p class="project-desc">
-            An offline-first PWA for university students: weekly schedule, a multi-system GPA engine,
-            exams, attendance, notes, tasks and study tracking — plus real-time collaborative groups
-            with shared schedules and chat. Built on Supabase (Auth, PostgreSQL with RLS, Realtime,
-            Storage) with an IndexedDB sync queue and a service worker for true offline support, and a
-            bilingual Arabic/English UI with full RTL.
+        </div>
+        <div class="project-body">
+          <span class="project-kicker mono" data-i18n="projects.ruqi.kicker">National attendance system · Syrian Ministry of Education</span>
+          <h3 class="project-name">رُقِيّ <span class="project-name-sub">| Ruqi</span></h3>
+          <p class="project-desc" data-i18n="projects.ruqi.desc">
+            A multi-portal system connecting all four tiers of a national school network — teacher → school →
+            directorate → ministry — around one source of truth for daily attendance and field reports, with a
+            parent portal and admin tooling on top. Offline-first with localStorage queues, a live directorate
+            map (Leaflet + OpenStreetMap), Supabase with PostgreSQL Row-Level Security, per-portal auth sessions,
+            and CI on GitHub Actions. Arabic-first, full RTL.
           </p>
+          <ul class="highlights">
+            <li class="mono"><b>4</b> <span data-i18n="projects.ruqi.h1">portal tiers</span></li>
+            <li class="mono"><b>+</b> <span data-i18n="projects.ruqi.h2">parent &amp; admin</span></li>
+            <li class="mono"><b>RLS</b> <span data-i18n="projects.ruqi.h3">enforced in SQL</span></li>
+            <li class="mono"><b>CI</b> <span data-i18n="projects.ruqi.h4">validate + Lighthouse</span></li>
+          </ul>
           <ul class="tags">
-            <li>PWA</li>
-            <li>Supabase</li>
-            <li>Service Worker</li>
-            <li>Vanilla JS</li>
-            <li>Cloudflare Pages</li>
+            <li>Vanilla JS</li><li>Supabase</li><li>PostgreSQL · RLS</li><li>Leaflet + OSM</li>
+            <li>GitHub Actions CI</li><li>Arabic RTL</li>
           </ul>
           <div class="project-links">
-            <a class="btn btn-small btn-primary" href="https://unimanager-sy.pages.dev" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn btn-small btn-ghost" href="https://github.com/andrewleko19-boop/unimanager" target="_blank" rel="noopener">Source</a>
+            <a class="btn btn-small btn-primary magnetic" href="https://andrewleko19-boop.github.io/nsams/" target="_blank" rel="noopener" data-i18n="projects.live">Live demo</a>
+            <a class="btn btn-small btn-ghost magnetic" href="https://github.com/andrewleko19-boop/nsams" target="_blank" rel="noopener" data-i18n="projects.source">Source</a>
           </div>
-        </article>
-
-      </div>
+        </div>
+      </article>
     </section>
 
-    <!-- Skills -->
+    <!-- ===== Skills ===== -->
     <section class="section container" id="skills" aria-labelledby="skills-title">
-      <h2 class="section-title reveal" id="skills-title">Skills</h2>
+      <h2 class="section-title reveal" id="skills-title"><span class="title-index mono">03.</span> <span data-i18n="skills.title">Skills</span></h2>
       <div class="skills">
         <div class="skill-group reveal">
-          <h3 class="skill-title">Frontend</h3>
+          <h3 class="skill-title mono" data-i18n="skills.frontend">Frontend</h3>
           <ul class="skill-list">
-            <li>Vanilla JS</li>
-            <li>HTML / CSS</li>
-            <li>RTL Arabic UI</li>
-            <li>PWA</li>
+            <li>Vanilla JS (ES modules)</li><li>HTML / CSS</li><li>PWA / Service Workers</li>
+            <li>IndexedDB</li><li>Canvas</li><li data-i18n="skills.rtl">RTL &amp; i18n (AR/EN)</li><li data-i18n="skills.a11y">Responsive &amp; a11y</li>
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h3 class="skill-title">Backend</h3>
+          <h3 class="skill-title mono" data-i18n="skills.backend">Backend &amp; Data</h3>
           <ul class="skill-list">
-            <li>Supabase</li>
-            <li>PostgreSQL</li>
-            <li>Row-Level Security</li>
-            <li>Edge Functions</li>
+            <li>Supabase (Auth/Realtime/Storage)</li><li>PostgreSQL</li><li>Row-Level Security</li>
+            <li>Edge Functions</li><li data-i18n="skills.sync">Offline sync queues</li>
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h3 class="skill-title">Tools</h3>
+          <h3 class="skill-title mono" data-i18n="skills.tools">Tooling &amp; Ops</h3>
           <ul class="skill-list">
-            <li>Git</li>
-            <li>GitHub Actions</li>
-            <li>GitHub Pages</li>
-            <li>Cloudflare Pages</li>
+            <li>Git</li><li>GitHub Actions CI/CD</li><li>GitHub Pages</li><li>Cloudflare Pages</li>
+            <li>Lighthouse</li><li>Sentry</li><li>Android TWA</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ===== Experience / Timeline ===== -->
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title reveal" id="experience-title"><span class="title-index mono">04.</span> <span data-i18n="exp.title">Experience</span></h2>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-date mono">2024 — present</span>
+          <h3 class="tl-role" data-i18n="exp.uni.role">Creator &amp; Developer — UniManager</h3>
+          <p class="tl-desc" data-i18n="exp.uni.desc">
+            Designed and shipped an offline-first PWA from scratch: a config-driven GPA engine, real-time groups
+            (Supabase Realtime + Storage), an IndexedDB sync queue and a hand-rolled service worker. Published an
+            Android TWA.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-date mono">2024 — present</span>
+          <h3 class="tl-role" data-i18n="exp.ruqi.role">Developer — Ruqi (Syrian Ministry of Education)</h3>
+          <p class="tl-desc" data-i18n="exp.ruqi.desc">
+            Built a four-tier national attendance system with PostgreSQL Row-Level Security, per-portal auth, a
+            live directorate map, and GitHub Actions CI (validation + Lighthouse).
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="tl-date mono" data-i18n="exp.edu.date">ongoing</span>
+          <h3 class="tl-role" data-i18n="exp.edu.role">Computer Engineering / CS — AASTMT</h3>
+          <p class="tl-desc" data-i18n="exp.edu.desc">
+            Studying at the Arab Academy for Science, Technology &amp; Maritime Transport, Lattakia, Syria —
+            building toward strong fundamentals in systems, performance, and shipping real software end to end.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CV ===== -->
+    <section class="section container cv-section" aria-labelledby="cv-title">
+      <div class="cv-card reveal">
+        <div>
+          <h2 class="cv-title" id="cv-title" data-i18n="cv.title">Want the one-page version?</h2>
+          <p class="cv-lead" data-i18n="cv.lead">View my résumé in the browser or print it straight to PDF.</p>
+        </div>
+        <div class="cv-actions">
+          <a class="btn btn-primary magnetic" href="resume.html" data-i18n="cv.view">View / Print résumé</a>
+          <a class="btn btn-ghost magnetic" href="resume.html" data-i18n="cv.download">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
     <section class="section container" id="contact" aria-labelledby="contact-title">
-      <h2 class="section-title reveal" id="contact-title">Contact</h2>
-      <p class="contact-lead reveal">Open to collaboration and opportunities. The fastest way to reach me:</p>
+      <h2 class="section-title reveal" id="contact-title"><span class="title-index mono">05.</span> <span data-i18n="contact.title">Contact</span></h2>
+      <p class="contact-lead reveal" data-i18n="contact.lead">Open to collaboration and opportunities. The fastest way to reach me:</p>
+      <div class="contact-shell reveal mono" aria-hidden="true">
+        <span class="cs-line"><span class="cs-prompt">$</span> contact --me</span>
+        <span class="cs-line">→ email:&nbsp;&nbsp;mh6127880@gmail.com</span>
+        <span class="cs-line">→ github: andrewleko19-boop</span>
+        <span class="cs-line">→ status: <span class="cs-ok">open to work &amp; collaboration</span></span>
+      </div>
       <div class="contact-links reveal">
         <a class="contact-link" href="mailto:mh6127880@gmail.com">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-            <path d="m3 7 9 6 9-6"></path>
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path>
           </svg>
           <span>mh6127880@gmail.com</span>
         </a>
@@ -193,9 +377,26 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>&copy; <span id="year">2026</span> Mohamed Hasan</span>
-      <span class="footer-note">Built with vanilla JS — no framework, no build step.</span>
+      <span class="footer-note" data-i18n="footer.note">Built with vanilla JS — no framework, no build step.</span>
+      <a class="footer-top" href="#top"><span data-i18n="footer.top">Back to top</span> ↑</a>
     </div>
   </footer>
+
+  <!-- ===== Terminal modal ===== -->
+  <div class="term-overlay" id="termOverlay" hidden>
+    <div class="term" id="term" role="dialog" aria-modal="true" aria-labelledby="termTitle">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-title mono" id="termTitle">mohamed@portfolio: ~</span>
+        <button class="term-close" id="termClose" data-i18n-aria="a11y.close" aria-label="Close terminal">✕</button>
+      </div>
+      <div class="term-body mono" id="termBody" tabindex="-1"></div>
+      <div class="term-input-row mono">
+        <span class="term-prompt" aria-hidden="true">~/ $</span>
+        <input class="term-input" id="termInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" data-i18n-aria="a11y.terminalInput" aria-label="Terminal command input">
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

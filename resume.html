@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Hasan — Résumé</title>
+  <meta name="description" content="Résumé of Mohamed Hasan — Full-Stack Developer & Computer Engineering student, Lattakia, Syria.">
+  <meta name="theme-color" content="#0a0f1a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Cairo:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .resume-wrap { max-width: 820px; margin: 40px auto; padding: 0 24px 60px; }
+    .r-toolbar { display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 18px; flex-wrap: wrap; }
+    .paper {
+      background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow-lg); padding: 46px 50px;
+    }
+    .r-head { border-bottom: 2px solid var(--border); padding-bottom: 18px; margin-bottom: 22px; }
+    .r-name { margin: 0; font-size: 2rem; letter-spacing: -1px; }
+    .r-name .gradient-text { background: var(--grad-accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .r-role { margin: 4px 0 12px; color: var(--cyan); font-weight: 600; }
+    .r-contact { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--text-secondary); font-family: var(--font-mono); }
+    .r-contact a { color: var(--text-secondary); }
+    .r-section { margin-top: 24px; }
+    .r-section h2 { font-size: .82rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--cyan); margin: 0 0 12px; font-family: var(--font-mono); }
+    .r-section p { margin: 0 0 8px; color: var(--text-secondary); }
+    .r-job { margin-bottom: 16px; }
+    .r-job-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
+    .r-job-title { font-weight: 700; color: var(--text-primary); }
+    .r-job-date { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+    .r-job-sub { color: var(--cyan); font-size: 13px; margin: 2px 0 6px; }
+    .r-job ul { margin: 0; padding-inline-start: 20px; }
+    .r-job li { color: var(--text-secondary); margin-bottom: 4px; font-size: .95rem; }
+    .r-skills { display: grid; gap: 8px; }
+    .r-skills b { color: var(--text-primary); }
+    .r-skills span { color: var(--text-secondary); }
+    @media (max-width: 560px) { .paper { padding: 30px 24px; } }
+    @media print {
+      :root { --bg-primary:#fff; --bg-secondary:#fff; --text-primary:#000; --text-secondary:#222; --text-muted:#555; --border:#ccc; }
+      body { background:#fff; }
+      .r-toolbar, .site-header, .spotlight { display: none !important; }
+      .resume-wrap { margin: 0; padding: 0; max-width: none; }
+      .paper { box-shadow: none; border: none; border-radius: 0; padding: 0; }
+      .r-name .gradient-text, .r-section h2, .r-role, .r-job-sub { color: #0a5a6b !important; -webkit-text-fill-color: #0a5a6b; }
+      a { color: #000 !important; }
+      .r-job, .r-section { break-inside: avoid; }
+      @page { margin: 1.4cm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrap">
+    <div class="r-toolbar">
+      <a class="btn btn-ghost" href="index.html" data-i18n="back">← Back to site</a>
+      <button class="btn btn-ghost" id="rLang" type="button">العربية</button>
+      <button class="btn btn-primary" id="rPrint" type="button" data-i18n="print">🖨 Print / Save as PDF</button>
+    </div>
+
+    <article class="paper">
+      <header class="r-head">
+        <h1 class="r-name"><span class="gradient-text">Mohamed Hasan</span></h1>
+        <p class="r-role" data-i18n="role">Full-Stack Developer · Computer Engineering Student</p>
+        <div class="r-contact">
+          <span>Lattakia, Syria</span>
+          <a href="mailto:mh6127880@gmail.com">mh6127880@gmail.com</a>
+          <a href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener">github.com/andrewleko19-boop</a>
+          <a href="https://andrewleko19-boop.github.io/portfolio/" target="_blank" rel="noopener">portfolio</a>
+        </div>
+      </header>
+
+      <section class="r-section">
+        <h2 data-i18n="h.summary">Summary</h2>
+        <p data-i18n="summary">Computer Engineering / CS student who ships. I build offline-first PWAs end to end with vanilla JS, Supabase and PostgreSQL (Row-Level Security) — bilingual Arabic/English, full RTL, no framework and no build step. Two real products in production.</p>
+      </section>
+
+      <section class="r-section">
+        <h2 data-i18n="h.projects">Selected Projects</h2>
+
+        <div class="r-job">
+          <div class="r-job-top">
+            <span class="r-job-title">UniManager</span>
+            <span class="r-job-date">2024 — present</span>
+          </div>
+          <div class="r-job-sub" data-i18n="p.uni.sub">Offline-first PWA for university students · live in production</div>
+          <ul>
+            <li data-i18n="p.uni.b1">Built a config-driven GPA engine covering 7 grading systems across 4 computation types (percentage, letter, UK honours classification, inverted German 1–5).</li>
+            <li data-i18n="p.uni.b2">Engineered offline-first sync: an IndexedDB FIFO queue + hand-rolled service worker, with real-time collaborative groups (chat, shared schedules & exams) on Supabase Realtime + Storage.</li>
+            <li data-i18n="p.uni.b3">Bilingual AR/EN with full RTL; ~7,500 lines in a single file; shipped an Android TWA. Live: unimanager-sy.pages.dev</li>
+          </ul>
+        </div>
+
+        <div class="r-job">
+          <div class="r-job-top">
+            <span class="r-job-title">رُقِيّ — Ruqi (NSAMS)</span>
+            <span class="r-job-date">2024 — present</span>
+          </div>
+          <div class="r-job-sub" data-i18n="p.ruqi.sub">National school attendance system · Syrian Ministry of Education</div>
+          <ul>
+            <li data-i18n="p.ruqi.b1">Designed a four-tier multi-portal system (teacher → school → directorate → ministry, plus parent & admin) around one shared source of truth for daily attendance and field reports.</li>
+            <li data-i18n="p.ruqi.b2">Enforced access control with PostgreSQL Row-Level Security and per-portal auth sessions; built a live directorate map with Leaflet + OpenStreetMap.</li>
+            <li data-i18n="p.ruqi.b3">Set up GitHub Actions CI (JS + HTML validation, Lighthouse budget) and GitHub Pages deploy. Arabic-first, full RTL.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="r-section">
+        <h2 data-i18n="h.skills">Skills</h2>
+        <div class="r-skills">
+          <div><b data-i18n="s.frontend">Frontend:</b> <span>Vanilla JS (ES modules), HTML/CSS, PWA & Service Workers, IndexedDB, Canvas, RTL & i18n (AR/EN), responsive & accessibility</span></div>
+          <div><b data-i18n="s.backend">Backend & Data:</b> <span>Supabase (Auth, Realtime, Storage), PostgreSQL, Row-Level Security, Edge Functions, offline sync queues</span></div>
+          <div><b data-i18n="s.tools">Tooling & Ops:</b> <span>Git, GitHub Actions CI/CD, GitHub Pages, Cloudflare Pages, Lighthouse, Sentry, Android TWA</span></div>
+        </div>
+      </section>
+
+      <section class="r-section">
+        <h2 data-i18n="h.education">Education</h2>
+        <div class="r-job">
+          <div class="r-job-top">
+            <span class="r-job-title" data-i18n="edu.title">Computer Engineering / Computer Science</span>
+            <span class="r-job-date" data-i18n="edu.date">ongoing</span>
+          </div>
+          <div class="r-job-sub">AASTMT — Arab Academy for Science, Technology & Maritime Transport, Lattakia, Syria</div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      try { root.setAttribute("data-theme", localStorage.getItem("theme") || "dark"); } catch (e) {}
+
+      var DICT = {
+        ar: {
+          "back": "← العودة للموقع", "print": "🖨 طباعة / حفظ PDF",
+          "role": "مطوّر Full-Stack · طالب هندسة حاسوب",
+          "h.summary": "نبذة",
+          "summary": "طالب هندسة حاسوب / علوم حاسوب يُطلق منتجات حقيقية. أبني تطبيقات PWA تعمل دون اتصال من البداية للنهاية بـ JavaScript خام وSupabase وPostgreSQL مع أمان على مستوى الصف (RLS) — ثنائي اللغة عربي/إنجليزي بدعم RTL كامل، بلا إطار عمل وبلا خطوة build. منتجان فعليان في الإنتاج.",
+          "h.projects": "مشاريع مختارة",
+          "p.uni.sub": "تطبيق PWA يعمل دون اتصال للطلاب الجامعيين · منشور فعلياً",
+          "p.uni.b1": "بنيت محرّك معدّل تراكمي قابل للضبط يغطّي 7 أنظمة تقدير عبر 4 أنواع حساب (نسبة مئوية، حرفي، تصنيف الشرف البريطاني، والنظام الألماني المعكوس 1–5).",
+          "p.uni.b2": "صمّمت تزامناً يعمل دون اتصال: طابور FIFO على IndexedDB وservice worker مكتوب يدوياً، مع مجموعات تعاونية لحظية (محادثة، جداول وامتحانات مشتركة) على Supabase Realtime + Storage.",
+          "p.uni.b3": "ثنائي اللغة عربي/إنجليزي بدعم RTL كامل؛ نحو 7500 سطر في ملف واحد؛ ونشرت حزمة أندرويد TWA. الرابط: unimanager-sy.pages.dev",
+          "p.ruqi.sub": "نظام حضور مدرسي وطني · وزارة التربية السورية",
+          "p.ruqi.b1": "صمّمت نظاماً متعدّد البوابات من أربعة مستويات (معلّم ← مدرسة ← مديرية ← وزارة، مع ولي أمر وإشراف) حول مصدر حقيقة واحد للحضور اليومي والتقارير الميدانية.",
+          "p.ruqi.b2": "طبّقت التحكّم بالوصول عبر أمان PostgreSQL على مستوى الصف وجلسات مصادقة لكل بوابة؛ وبنيت خريطة مديرية حيّة بـ Leaflet + OpenStreetMap.",
+          "p.ruqi.b3": "أعددت تكاملاً مستمراً على GitHub Actions (تحقّق JS + HTML، وميزانية Lighthouse) ونشراً على GitHub Pages. عربي أولاً، بدعم RTL كامل.",
+          "h.skills": "المهارات",
+          "s.frontend": "الواجهة:", "s.backend": "الخلفية والبيانات:", "s.tools": "الأدوات والتشغيل:",
+          "h.education": "التعليم",
+          "edu.title": "هندسة حاسوب / علوم حاسوب", "edu.date": "مستمرّ"
+        }
+      };
+
+      var cur = "en";
+      var btn = document.getElementById("rLang");
+      btn.addEventListener("click", function () {
+        cur = cur === "en" ? "ar" : "en";
+        root.setAttribute("lang", cur);
+        root.setAttribute("dir", cur === "ar" ? "rtl" : "ltr");
+        btn.textContent = cur === "en" ? "العربية" : "English";
+        if (cur === "ar") {
+          document.querySelectorAll("[data-i18n]").forEach(function (el) {
+            var k = el.getAttribute("data-i18n"); if (DICT.ar[k]) el.textContent = DICT.ar[k];
+          });
+        } else { location.reload(); }
+      });
+
+      document.getElementById("rPrint").addEventListener("click", function () { window.print(); });
+    })();
+  </script>
+</body>
+</html>
