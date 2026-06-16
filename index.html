@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Hasan — Full-Stack Developer</title>
+  <meta name="description" content="Mohamed Hasan — Full-Stack Developer & CS Student at AASTMT Lattakia, Syria. Building real-world web apps: Ruqi (national school attendance system) and UniManager (a PWA for university students).">
+  <meta name="author" content="Mohamed Hasan">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamed Hasan — Full-Stack Developer">
+  <meta property="og:description" content="CS student building real-world web apps with vanilla JS, Supabase, and PostgreSQL.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span class="brand-name">Mohamed Hasan</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle color theme" aria-pressed="false">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="hero-eyebrow reveal">Full-Stack Developer &amp; CS Student</p>
+      <h1 class="hero-title reveal" id="hero-title">Mohamed Hasan</h1>
+      <p class="hero-subtitle reveal">Full-Stack Developer &amp; CS Student at AASTMT Lattakia, Syria</p>
+      <p class="hero-tagline reveal">I build real-world web apps end to end — vanilla JS on the front, Supabase and
+        PostgreSQL on the back — with a focus on offline-first PWAs and Arabic RTL interfaces.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="mailto:mh6127880@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 class="section-title reveal" id="about-title">About</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          CS student building real-world web apps. Currently developing <strong>Ruqi</strong> — a
+          national school attendance system for the Syrian Ministry of Education — and
+          <strong>UniManager</strong>, a PWA for university students. I like shipping small, fast,
+          dependency-light apps that work offline and read naturally in both Arabic and English.
+        </p>
+        <ul class="about-facts reveal">
+          <li><span class="fact-label">Location</span><span class="fact-value">Lattakia, Syria</span></li>
+          <li><span class="fact-label">Studying</span><span class="fact-value">Computer Science, AASTMT</span></li>
+          <li><span class="fact-label">Focus</span><span class="fact-value">PWAs · Supabase · RTL UI</span></li>
+          <li><span class="fact-label">Build style</span><span class="fact-value">Vanilla JS, no build step</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title reveal" id="projects-title">Projects</h2>
+      <div class="projects">
+
+        <article class="project-card project-card--ruqi reveal">
+          <div class="project-head">
+            <h3 class="project-name">Ruqi</h3>
+            <span class="project-kicker">National School Attendance Monitoring System</span>
+          </div>
+          <p class="project-desc">
+            Built for the Syrian Ministry of Education. A multi-portal web app that connects the four
+            tiers of a national school system — teacher → school → directorate → ministry (plus parent
+            and admin portals) — around one shared source of truth for daily attendance and field
+            reports. Backed by Supabase with extensive PostgreSQL Row-Level Security, automated with
+            GitHub Actions CI/CD, and built Arabic-first with a full RTL UI.
+          </p>
+          <ul class="tags">
+            <li>Vanilla JS</li>
+            <li>Supabase</li>
+            <li>PostgreSQL (RLS)</li>
+            <li>GitHub Pages</li>
+            <li>Arabic RTL UI</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-small btn-primary" href="https://github.com/andrewleko19-boop/nsams" target="_blank" rel="noopener">Source</a>
+            <a class="btn btn-small btn-ghost" href="https://andrewleko19-boop.github.io/nsams/" target="_blank" rel="noopener">Live demo</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--uni reveal">
+          <div class="project-head">
+            <h3 class="project-name">UniManager</h3>
+            <span class="project-kicker">University Student Manager</span>
+          </div>
+          <p class="project-desc">
+            An offline-first PWA for university students: weekly schedule, a multi-system GPA engine,
+            exams, attendance, notes, tasks and study tracking — plus real-time collaborative groups
+            with shared schedules and chat. Built on Supabase (Auth, PostgreSQL with RLS, Realtime,
+            Storage) with an IndexedDB sync queue and a service worker for true offline support, and a
+            bilingual Arabic/English UI with full RTL.
+          </p>
+          <ul class="tags">
+            <li>PWA</li>
+            <li>Supabase</li>
+            <li>Service Worker</li>
+            <li>Vanilla JS</li>
+            <li>Cloudflare Pages</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-small btn-primary" href="https://unimanager-sy.pages.dev" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/andrewleko19-boop/unimanager" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title reveal" id="skills-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="skill-list">
+            <li>Vanilla JS</li>
+            <li>HTML / CSS</li>
+            <li>RTL Arabic UI</li>
+            <li>PWA</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-title">Backend</h3>
+          <ul class="skill-list">
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
+            <li>Row-Level Security</li>
+            <li>Edge Functions</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-title">Tools</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>GitHub Actions</li>
+            <li>GitHub Pages</li>
+            <li>Cloudflare Pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title reveal" id="contact-title">Contact</h2>
+      <p class="contact-lead reveal">Open to collaboration and opportunities. The fastest way to reach me:</p>
+      <div class="contact-links reveal">
+        <a class="contact-link" href="mailto:mh6127880@gmail.com">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="m3 7 9 6 9-6"></path>
+          </svg>
+          <span>mh6127880@gmail.com</span>
+        </a>
+        <a class="contact-link" href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"></path>
+          </svg>
+          <span>github.com/andrewleko19-boop</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Mohamed Hasan</span>
+      <span class="footer-note">Built with vanilla JS — no framework, no build step.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
