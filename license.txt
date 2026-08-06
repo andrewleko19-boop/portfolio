@@ -1,0 +1,86 @@
+PORTFOLIO TEMPLATE — LICENSE AGREEMENT
+========================================
+
+Copyright (c) [Your Name] / [Your Studio Name]
+All rights reserved.
+
+This license governs the use of this portfolio website template (HTML, CSS,
+and JavaScript source files, and any accompanying assets). By purchasing
+and/or using this template, you agree to the terms of the license tier you
+have purchased, as described below.
+
+--------------------------------------------------------------------
+1. SINGLE-CLIENT LICENSE
+--------------------------------------------------------------------
+Grants the buyer the right to:
+  - Use this template to build ONE (1) live website for ONE (1) end
+    client or for the buyer's own personal/business use.
+  - Modify the source code, content, colors, and branding freely for
+    that single deployment.
+
+The buyer may NOT:
+  - Resell, sublicense, or redistribute the template (as-is or modified)
+    as a standalone product, theme, or template.
+  - Use this single license to deliver the template to more than one
+    client or deploy it on more than one live domain.
+  - Claim original authorship of the underlying template code.
+
+--------------------------------------------------------------------
+2. EXTENDED LICENSE (UP TO 10 CLIENTS)
+--------------------------------------------------------------------
+Grants the buyer the right to:
+  - Use this template to build up to TEN (10) separate live websites,
+    each for a different end client, or for the buyer's own multiple
+    projects.
+  - Modify the source code, content, colors, and branding freely for
+    each of those deployments.
+
+The buyer may NOT:
+  - Exceed ten (10) total client/project deployments under this license
+    tier without purchasing additional licenses.
+  - Resell, sublicense, or redistribute the template itself (as-is or
+    modified) as a standalone product, theme, or template.
+  - Claim original authorship of the underlying template code.
+
+--------------------------------------------------------------------
+3. UNLIMITED / AGENCY LICENSE
+--------------------------------------------------------------------
+Grants the buyer (typically an agency or freelancer working with
+multiple clients) the right to:
+  - Use this template to build an UNLIMITED number of live websites for
+    an unlimited number of end clients or internal projects, for as
+    long as the license remains valid.
+  - Modify the source code, content, colors, and branding freely for
+    each deployment.
+  - Deliver finished websites built from this template to clients as
+    part of paid design/development services.
+
+The buyer may NOT:
+  - Resell, sublicense, or redistribute the raw template itself (as-is
+    or modified) as a standalone product, theme, marketplace item, or
+    template — this license covers using the template to build client
+    websites, not reselling the template as a product.
+  - Claim original authorship of the underlying template code.
+
+--------------------------------------------------------------------
+GENERAL TERMS (ALL TIERS)
+--------------------------------------------------------------------
+- THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+  NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+  CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE
+  TEMPLATE.
+- Ownership of the original template source code remains with the
+  author. Purchasing a license grants usage rights as described above;
+  it does not transfer copyright ownership.
+- Attribution/credit to the original author is appreciated but not
+  required unless otherwise agreed in writing.
+- Replace placeholder content (name, email, project details, images,
+  domain, etc.) with your own information before deploying to
+  production.
+- The author reserves the right to update these license terms for
+  future sales; the terms in effect at the time of purchase apply to
+  that purchase.
+
+For licensing questions, contact: your@email.com
