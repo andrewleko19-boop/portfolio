@@ -1,5 +1,5 @@
 /* ============================================================
-   Mohamed Hasan — portfolio. Vanilla JS, no dependencies.
+   [Your Name] — portfolio. Vanilla JS, no dependencies.
    Modules: theme · i18n · reveal · counters · typing · terminal
             · canvas constellation · tilt · magnetic · spotlight · nav
    Every motion effect respects prefers-reduced-motion.
@@ -20,38 +20,38 @@
       "nav.about": "About", "nav.projects": "Projects", "nav.skills": "Skills",
       "nav.experience": "Experience", "nav.contact": "Contact",
       "hero.eyebrow": "full-stack developer & cs student",
-      "hero.tagline": "I build real-world web apps end to end — vanilla JS on the front, Supabase and PostgreSQL on the back. Two shipped products: a national attendance system for the Syrian Ministry of Education, and an offline-first PWA used by university students.",
-      "hero.status": "online · last shipped: UniManager groups",
+      "hero.tagline": "I build real-world web apps end to end — vanilla JS on the front, Supabase and PostgreSQL on the back. Two shipped products: a task management system for teams, and an offline-first admin dashboard used by real customers.",
+      "hero.status": "online · last shipped: Project A update",
       "hero.cta.projects": "View Projects", "hero.cta.cv": "Download CV", "hero.cta.github": "GitHub",
       "stats.apps": "Apps shipped", "stats.grading": "Grading systems", "stats.types": "Computation types",
       "stats.portals": "Portal tiers", "stats.loc": "Lines in one file",
       "about.title": "About",
-      "about.p1": "I'm a Computer Engineering / CS student at AASTMT in Lattakia, Syria, who likes shipping. I build small, fast, dependency-light apps that work offline and read naturally in both Arabic and English.",
+      "about.p1": "I'm a Computer Engineering / CS student at [Your University] in [Your City, Country], who likes shipping. I build small, fast, dependency-light apps that work offline and read naturally in both Arabic and English.",
       "about.p2": "My current focus is offline-first PWAs backed by Supabase and PostgreSQL with Row-Level Security — real auth, real realtime, real data isolation — without reaching for a framework or a build step.",
       "about.chip.offline": "Offline-first", "about.chip.realtime": "Realtime", "about.chip.rls": "RLS",
       "about.chip.rtl": "RTL & i18n", "about.chip.pwa": "PWA",
       "about.fact.location": "Location", "about.fact.studying": "Studying",
-      "about.fact.studying.val": "Computer Engineering, AASTMT", "about.fact.focus": "Focus",
+      "about.fact.studying.val": "[Your Degree], [Your University]", "about.fact.focus": "Focus",
       "about.fact.build": "Build style", "about.fact.build.val": "Vanilla JS, no build", "about.fact.email": "Email",
       "projects.title": "Projects", "projects.live": "Live demo", "projects.source": "Source",
       "projects.uni.kicker": "Offline-first PWA · Live in production",
-      "projects.uni.desc": "The app that replaces everything a university student juggles — schedule, a config-driven GPA engine spanning 7 grading systems and 4 computation types, exams with countdowns, notes, tasks, Pomodoro and study logging, sleep and attendance tracking. Plus real-time collaborative groups: invite codes, synced schedules, shared exams, live chat with file attachments and admin permissions. Bilingual AR/EN, full RTL.",
-      "projects.uni.h1": "grading systems", "projects.uni.h2": "computation types",
+      "projects.uni.desc": "The app that replaces everything a team juggles — scheduling, a config-driven scoring engine spanning multiple systems and computation types, deadlines with countdowns, notes, tasks, focus sessions and activity logging, tracking and reporting. Plus real-time collaborative groups: invite codes, synced schedules, shared tasks, live chat with file attachments and admin permissions. Bilingual AR/EN, full RTL.",
+      "projects.uni.h1": "configurable systems", "projects.uni.h2": "computation types",
       "projects.uni.h3": "lines, one file", "projects.uni.h4": "TWA shipped",
-      "projects.ruqi.kicker": "National attendance system · Syrian Ministry of Education",
-      "projects.ruqi.desc": "A multi-portal system connecting all four tiers of a national school network — teacher → school → directorate → ministry — around one source of truth for daily attendance and field reports, with a parent portal and admin tooling on top. Offline-first with localStorage queues, a live directorate map (Leaflet + OpenStreetMap), Supabase with PostgreSQL Row-Level Security, per-portal auth sessions, and CI on GitHub Actions. Arabic-first, full RTL.",
-      "projects.ruqi.h1": "portal tiers", "projects.ruqi.h2": "parent & admin",
+      "projects.ruqi.kicker": "Admin dashboard system · Enterprise client",
+      "projects.ruqi.desc": "A multi-portal system connecting all tiers of an organization — team → manager → department → organization — around one source of truth for daily reporting and analytics, with a client portal and admin tooling on top. Offline-first with localStorage queues, a live map view (Leaflet + OpenStreetMap), Supabase with PostgreSQL Row-Level Security, per-portal auth sessions, and CI on GitHub Actions. Bilingual, full RTL support.",
+      "projects.ruqi.h1": "portal tiers", "projects.ruqi.h2": "client & admin",
       "projects.ruqi.h3": "enforced in SQL", "projects.ruqi.h4": "validate + Lighthouse",
       "skills.title": "Skills", "skills.frontend": "Frontend", "skills.backend": "Backend & Data",
       "skills.tools": "Tooling & Ops", "skills.rtl": "RTL & i18n (AR/EN)",
       "skills.a11y": "Responsive & a11y", "skills.sync": "Offline sync queues",
       "exp.title": "Experience",
-      "exp.uni.role": "Creator & Developer — UniManager",
-      "exp.uni.desc": "Designed and shipped an offline-first PWA from scratch: a config-driven GPA engine, real-time groups (Supabase Realtime + Storage), an IndexedDB sync queue and a hand-rolled service worker. Published an Android TWA.",
-      "exp.ruqi.role": "Developer — Ruqi (Syrian Ministry of Education)",
-      "exp.ruqi.desc": "Built a four-tier national attendance system with PostgreSQL Row-Level Security, per-portal auth, a live directorate map, and GitHub Actions CI (validation + Lighthouse).",
-      "exp.edu.date": "ongoing", "exp.edu.role": "Computer Engineering / CS — AASTMT",
-      "exp.edu.desc": "Studying at the Arab Academy for Science, Technology & Maritime Transport, Lattakia, Syria — building toward strong fundamentals in systems, performance, and shipping real software end to end.",
+      "exp.uni.role": "Creator & Developer — Project A",
+      "exp.uni.desc": "Designed and shipped an offline-first PWA from scratch: a config-driven scoring engine, real-time groups (Supabase Realtime + Storage), an IndexedDB sync queue and a hand-rolled service worker. Published an Android TWA.",
+      "exp.ruqi.role": "Developer — Project B (Enterprise Client)",
+      "exp.ruqi.desc": "Built a four-tier admin dashboard system with PostgreSQL Row-Level Security, per-portal auth, a live map view, and GitHub Actions CI (validation + Lighthouse).",
+      "exp.edu.date": "ongoing", "exp.edu.role": "Computer Engineering / CS — [Your University]",
+      "exp.edu.desc": "Studying at [Your University], [Your City, Country] — building toward strong fundamentals in systems, performance, and shipping real software end to end.",
       "cv.title": "Want the one-page version?",
       "cv.lead": "View my résumé in the browser or print it straight to PDF.",
       "cv.view": "View / Print résumé", "cv.download": "Download CV",
@@ -66,38 +66,38 @@
       "nav.about": "نبذة", "nav.projects": "المشاريع", "nav.skills": "المهارات",
       "nav.experience": "الخبرة", "nav.contact": "تواصل",
       "hero.eyebrow": "مطوّر full-stack وطالب علوم حاسوب",
-      "hero.tagline": "أبني تطبيقات ويب حقيقية من البداية للنهاية — JavaScript خام في الواجهة، وSupabase وPostgreSQL في الخلفية. منتجان جاهزان: نظام حضور وطني لوزارة التربية السورية، وتطبيق PWA يعمل دون اتصال يستخدمه طلاب الجامعات.",
-      "hero.status": "متّصل · آخر إصدار: مجموعات UniManager",
+      "hero.tagline": "أبني تطبيقات ويب حقيقية من البداية للنهاية — JavaScript خام في الواجهة، وSupabase وPostgreSQL في الخلفية. منتجان جاهزان: نظام لإدارة المهام للفرق، ولوحة تحكم إدارية تعمل دون اتصال يستخدمها عملاء حقيقيون.",
+      "hero.status": "متّصل · آخر إصدار: تحديث المشروع الأول",
       "hero.cta.projects": "شاهد المشاريع", "hero.cta.cv": "حمّل السيرة", "hero.cta.github": "GitHub",
       "stats.apps": "تطبيقات منشورة", "stats.grading": "أنظمة تقدير", "stats.types": "أنواع حساب",
       "stats.portals": "بوابات وطنية", "stats.loc": "سطر في ملف واحد",
       "about.title": "نبذة",
-      "about.p1": "أنا طالب هندسة حاسوب / علوم حاسوب في الأكاديمية العربية (AASTMT) باللاذقية، سوريا، أحبّ أن أُطلق منتجات حقيقية. أبني تطبيقات صغيرة وسريعة وخفيفة التبعيات تعمل دون اتصال وتُقرأ بطبيعية بالعربية والإنجليزية.",
+      "about.p1": "أنا طالب هندسة حاسوب / علوم حاسوب في [جامعتك]، [مدينتك، بلدك]، أحبّ أن أُطلق منتجات حقيقية. أبني تطبيقات صغيرة وسريعة وخفيفة التبعيات تعمل دون اتصال وتُقرأ بطبيعية بالعربية والإنجليزية.",
       "about.p2": "تركيزي الحالي على تطبيقات PWA التي تعمل دون اتصال، مدعومة بـSupabase وPostgreSQL مع أمان على مستوى الصف (RLS) — مصادقة حقيقية، وتزامن لحظي، وعزل بيانات فعلي — دون إطار عمل ولا خطوة build.",
       "about.chip.offline": "يعمل دون اتصال", "about.chip.realtime": "لحظي", "about.chip.rls": "RLS",
       "about.chip.rtl": "RTL وتعدّد لغات", "about.chip.pwa": "PWA",
       "about.fact.location": "الموقع", "about.fact.studying": "الدراسة",
-      "about.fact.studying.val": "هندسة حاسوب، AASTMT", "about.fact.focus": "التركيز",
+      "about.fact.studying.val": "[تخصصك]، [جامعتك]", "about.fact.focus": "التركيز",
       "about.fact.build": "أسلوب البناء", "about.fact.build.val": "JS خام، بلا build", "about.fact.email": "البريد",
       "projects.title": "المشاريع", "projects.live": "تجربة حيّة", "projects.source": "الكود",
       "projects.uni.kicker": "تطبيق PWA يعمل دون اتصال · منشور فعلياً",
-      "projects.uni.desc": "التطبيق الذي يجمع كل ما يحتاجه الطالب الجامعي — جدول أسبوعي، ومحرّك معدّل تراكمي قابل للضبط يدعم 7 أنظمة تقدير و4 أنواع حساب، وامتحانات بعدّاد تنازلي، وملاحظات، ومهام، وبومودورو وتتبّع دراسة، وتتبّع نوم وحضور. إضافةً إلى مجموعات تعاونية لحظية: رموز دعوة، وجداول متزامنة، وامتحانات مشتركة، ومحادثة حيّة مع مرفقات وصلاحيات إشراف. ثنائي اللغة عربي/إنجليزي بدعم RTL كامل.",
-      "projects.uni.h1": "أنظمة تقدير", "projects.uni.h2": "أنواع حساب",
+      "projects.uni.desc": "التطبيق الذي يجمع كل ما يحتاجه الفريق — جدول أسبوعي، ومحرّك تقييم قابل للضبط يدعم أنظمة متعددة وأنواع حساب مختلفة، ومواعيد نهائية بعدّاد تنازلي، وملاحظات، ومهام، وجلسات تركيز وتتبّع نشاط. إضافةً إلى مجموعات تعاونية لحظية: رموز دعوة، وجداول متزامنة، ومهام مشتركة، ومحادثة حيّة مع مرفقات وصلاحيات إشراف. ثنائي اللغة عربي/إنجليزي بدعم RTL كامل.",
+      "projects.uni.h1": "أنظمة قابلة للضبط", "projects.uni.h2": "أنواع حساب",
       "projects.uni.h3": "سطر في ملف واحد", "projects.uni.h4": "حزمة أندرويد TWA",
-      "projects.ruqi.kicker": "نظام حضور وطني · وزارة التربية السورية",
-      "projects.ruqi.desc": "نظام متعدّد البوابات يربط المستويات الأربعة لشبكة المدارس الوطنية — معلّم ← مدرسة ← مديرية ← وزارة — حول مصدر حقيقة واحد للحضور اليومي والتقارير الميدانية، مع بوابة لأولياء الأمور وأدوات إشراف. يعمل دون اتصال عبر طوابير localStorage، وخريطة مديرية حيّة (Leaflet + OpenStreetMap)، وSupabase مع PostgreSQL وأمان على مستوى الصف، وجلسات مصادقة منفصلة لكل بوابة، وتكامل مستمر على GitHub Actions. عربي أولاً، بدعم RTL كامل.",
-      "projects.ruqi.h1": "بوابات", "projects.ruqi.h2": "ولي أمر وإشراف",
+      "projects.ruqi.kicker": "نظام لوحة تحكم إدارية · عميل مؤسسي",
+      "projects.ruqi.desc": "نظام متعدّد البوابات يربط مستويات المؤسسة — فريق ← مدير ← قسم ← مؤسسة — حول مصدر حقيقة واحد للتقارير اليومية والتحليلات، مع بوابة للعملاء وأدوات إشراف. يعمل دون اتصال عبر طوابير localStorage، وخريطة حيّة (Leaflet + OpenStreetMap)، وSupabase مع PostgreSQL وأمان على مستوى الصف، وجلسات مصادقة منفصلة لكل بوابة، وتكامل مستمر على GitHub Actions. ثنائي اللغة بدعم RTL كامل.",
+      "projects.ruqi.h1": "بوابات", "projects.ruqi.h2": "عميل وإشراف",
       "projects.ruqi.h3": "مُطبَّق في SQL", "projects.ruqi.h4": "تحقّق + Lighthouse",
-      "skills.title": "المهارات", "skills.frontend": "الواجهة", "skills.backend": "الخلفية والبيانات",
+      "skills.title": "المهارات", "skills.frontend": "الواجهة", "skills.backend": "الخلفية والبياناد",
       "skills.tools": "الأدوات والتشغيل", "skills.rtl": "RTL وتعدّد لغات (عربي/إنجليزي)",
       "skills.a11y": "استجابة وإتاحة", "skills.sync": "طوابير تزامن دون اتصال",
       "exp.title": "الخبرة",
-      "exp.uni.role": "المُنشئ والمطوّر — UniManager",
-      "exp.uni.desc": "صمّمت وأطلقت تطبيق PWA يعمل دون اتصال من الصفر: محرّك معدّل قابل للضبط، ومجموعات لحظية (Supabase Realtime + Storage)، وطابور تزامن على IndexedDB، وservice worker مكتوب يدوياً. ونشرت حزمة أندرويد TWA.",
-      "exp.ruqi.role": "مطوّر — رُقِيّ (وزارة التربية السورية)",
-      "exp.ruqi.desc": "بنيت نظام حضور وطنياً من أربعة مستويات مع أمان على مستوى الصف في PostgreSQL، ومصادقة لكل بوابة، وخريطة مديرية حيّة، وتكامل مستمر على GitHub Actions (تحقّق + Lighthouse).",
-      "exp.edu.date": "مستمرّ", "exp.edu.role": "هندسة حاسوب / علوم حاسوب — AASTMT",
-      "exp.edu.desc": "أدرس في الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري باللاذقية، سوريا — أبني أساسيات قوية في النظم والأداء وإطلاق برمجيات حقيقية كاملة.",
+      "exp.uni.role": "المُنشئ والمطوّر — المشروع الأول",
+      "exp.uni.desc": "صمّمت وأطلقت تطبيق PWA يعمل دون اتصال من الصفر: محرّك تقييم قابل للضبط، ومجموعات لحظية (Supabase Realtime + Storage)، وطابور تزامن على IndexedDB، وservice worker مكتوب يدوياً. ونشرت حزمة أندرويد TWA.",
+      "exp.ruqi.role": "مطوّر — المشروع الثاني (عميل مؤسسي)",
+      "exp.ruqi.desc": "بنيت نظام لوحة تحكم إدارية من أربعة مستويات مع أمان على مستوى الصف في PostgreSQL، ومصادقة لكل بوابة، وخريطة حيّة، وتكامل مستمر على GitHub Actions (تحقّق + Lighthouse).",
+      "exp.edu.date": "مستمرّ", "exp.edu.role": "هندسة حاسوب / علوم حاسوب — [جامعتك]",
+      "exp.edu.desc": "أدرس في [جامعتك]، [مدينتك، بلدك] — أبني أساسيات قوية في النظم والأداء وإطلاق برمجيات حقيقية كاملة.",
       "cv.title": "تريد النسخة المختصرة؟",
       "cv.lead": "اطّلع على سيرتي في المتصفّح أو اطبعها مباشرةً كـ PDF.",
       "cv.view": "عرض / طباعة السيرة", "cv.download": "حمّل السيرة",
@@ -110,8 +110,8 @@
   };
 
   var ROLES = {
-    en: ["Offline-first PWAs", "Supabase + PostgreSQL RLS", "Arabic RTL & bilingual UIs", "Vanilla JS, no build step"],
-    ar: ["تطبيقات تعمل دون اتصال", "Supabase + PostgreSQL RLS", "واجهات عربية RTL وثنائية اللغة", "JavaScript خام، بلا build"]
+    en: ["UI/UX Design", "React.js", "Node.js", "REST APIs"],
+    ar: ["تصميم UI/UX", "React.js", "Node.js", "REST APIs"]
   };
 
   var lang = "en";
@@ -264,7 +264,7 @@
       if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
     function banner() {
-      print('<span class="ok">mohamed@portfolio</span>:~$ welcome');
+      print('<span class="ok">user@portfolio</span>:~$ welcome');
       print('Type <span class="cmd">help</span> for commands. Try <span class="cmd">projects</span>, <span class="cmd">whoami</span>, <span class="cmd">open projects</span>.');
     }
 
@@ -285,17 +285,17 @@
         print('  <span class="accent">clear</span>     clear the screen');
       },
       whoami: function () {
-        print('<span class="accent">Mohamed Hasan</span> — Full-Stack Developer & CS student');
-        print('Lattakia, Syria · AASTMT');
+        print('<span class="accent">[Your Name]</span> — Full-Stack Developer & CS student');
+        print('[Your City, Country] · [Your University]');
         print('Offline-first PWAs · Supabase · PostgreSQL RLS · vanilla JS, no build step.');
       },
       projects: function () {
-        print('<span class="accent">UniManager</span> — offline-first PWA for university students.');
-        print('  7 grading systems · 4 computation types · real-time groups · Android TWA.');
-        print('  live: <a href="https://unimanager-sy.pages.dev" target="_blank" rel="noopener">unimanager-sy.pages.dev</a> · <a href="https://github.com/andrewleko19-boop/unimanager" target="_blank" rel="noopener">source</a>');
-        print('<span class="accent">رُقِيّ / Ruqi</span> — national school attendance, Syrian Ministry of Education.');
-        print('  teacher → school → directorate → ministry · PostgreSQL RLS · live map.');
-        print('  live: <a href="https://andrewleko19-boop.github.io/nsams/" target="_blank" rel="noopener">demo</a> · <a href="https://github.com/andrewleko19-boop/nsams" target="_blank" rel="noopener">source</a>');
+        print('<span class="accent">Project A</span> — offline-first task management system.');
+        print('  Multiple configurable systems · real-time groups · Android TWA.');
+        print('  live: <a href="#" target="_blank" rel="noopener">demo</a> · <a href="#" target="_blank" rel="noopener">source</a>');
+        print('<span class="accent">Project B</span> — admin dashboard for an enterprise client.');
+        print('  team → manager → department → org · PostgreSQL RLS · live map.');
+        print('  live: <a href="#" target="_blank" rel="noopener">demo</a> · <a href="#" target="_blank" rel="noopener">source</a>');
       },
       stack: function () {
         print('frontend : vanilla JS, PWA, Service Workers, IndexedDB, Canvas, RTL/i18n');
@@ -304,15 +304,15 @@
       },
       ls: function () { print('about/  projects/  skills/  experience/  contact/  resume.html'); },
       contact: function () {
-        print('email : <a href="mailto:mh6127880@gmail.com">mh6127880@gmail.com</a>');
-        print('github: <a href="https://github.com/andrewleko19-boop" target="_blank" rel="noopener">andrewleko19-boop</a>');
+        print('email : <a href="mailto:your@email.com">your@email.com</a>');
+        print('github: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a>');
       },
       cv: function () { print('opening résumé…'); setTimeout(function () { window.location.href = "resume.html"; }, 400); },
       theme: function () { document.getElementById("themeToggle").click(); print('theme → <span class="ok">' + root.getAttribute("data-theme") + '</span>'); },
       lang: function () { setLang(lang === "ar" ? "en" : "ar", true); print('lang → <span class="ok">' + lang + '</span>'); },
       clear: function () { body.innerHTML = ""; },
       sudo: function () { print('<span class="warn">nice try.</span> this incident will be reported. 😏'); },
-      github: function () { print('opening github…'); window.open("https://github.com/andrewleko19-boop", "_blank", "noopener"); }
+      github: function () { print('opening github…'); window.open("https://github.com/your-username", "_blank", "noopener"); }
     };
 
     function run(raw) {
@@ -346,7 +346,6 @@
       var tag = (document.activeElement && document.activeElement.tagName) || "";
       var typing = tag === "INPUT" || tag === "TEXTAREA";
       if (!isOpen() && !typing && (e.key === "/" || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k"))) { e.preventDefault(); open(); }
-      // focus trap
       if (isOpen() && e.key === "Tab") {
         var f = dialog.querySelectorAll('button, [href], input, [tabindex]:not([tabindex="-1"])');
         if (!f.length) return;
@@ -360,15 +359,12 @@
   /* ===================== Pointer effects (tilt · magnetic · spotlight) ===================== */
   var FINE = window.matchMedia && window.matchMedia("(pointer: fine)").matches;
   if (FINE && !REDUCE) {
-    // Spotlight
     var sx = 0, sy = 0, sQueued = false;
     document.body.classList.add("has-pointer");
     window.addEventListener("pointermove", function (e) {
       sx = e.clientX; sy = e.clientY;
       if (!sQueued) { sQueued = true; requestAnimationFrame(function () { root.style.setProperty("--mx", sx + "px"); root.style.setProperty("--my", sy + "px"); sQueued = false; }); }
     });
-
-    // Magnetic buttons
     document.querySelectorAll(".magnetic").forEach(function (el) {
       var raf = null;
       el.addEventListener("pointermove", function (e) {
@@ -378,8 +374,6 @@
       });
       el.addEventListener("pointerleave", function () { el.style.transform = ""; });
     });
-
-    // Card tilt
     document.querySelectorAll(".tilt").forEach(function (el) {
       var raf = null;
       el.addEventListener("pointermove", function (e) {
@@ -411,7 +405,7 @@
       for (var i = 0; i < count; i++) pts.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3 });
     }
 
-    function colorAt(x) { // cyan -> purple across width
+    function colorAt(x) {
       var k = x / Math.max(W, 1);
       var r = Math.round(6 + (168 - 6) * k), g = Math.round(182 + (85 - 182) * k), b = Math.round(212 + (247 - 212) * k);
       return r + "," + g + "," + b;
@@ -444,7 +438,7 @@
     function stop() { running = false; if (raf) cancelAnimationFrame(raf); raf = null; }
 
     size();
-    if (REDUCE) { // single static frame, no loop
+    if (REDUCE) {
       for (var s = 0; s < pts.length; s++) { pts[s].vx = 0; pts[s].vy = 0; }
       draw(); stop();
       return;
@@ -472,7 +466,7 @@
   /* ===================== Boot language ===================== */
   (function boot() {
     var stored = read("lang");
-    var initial = stored || ((navigator.language || "").toLowerCase().indexOf("ar") === 0 ? "ar" : "en");
+    var initial = stored || "en";
     setLang(initial, false);
   })();
 
