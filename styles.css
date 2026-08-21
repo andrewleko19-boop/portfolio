@@ -308,6 +308,11 @@ a.fact-value:hover { color: var(--cyan); }
 .ruqi-ladder li { flex: 1; text-align: center; font-size: 10.5px; color: #d7ffe9; padding: 7px 4px; background: rgba(46,204,113,.12); border: 1px solid rgba(46,204,113,.4); border-radius: 8px; position: relative; }
 .ruqi-ladder li:not(:last-child)::after { content: "→"; position: absolute; inset-inline-end: -10px; top: 50%; transform: translateY(-50%); color: #F0B429; font-size: 11px; z-index: 1; }
 :root[dir="rtl"] .ruqi-ladder li:not(:last-child)::after { content: "←"; }
+@media (max-width: 420px) {
+  .ruqi-ladder { gap: 2px; }
+  .ruqi-ladder li { font-size: 9px; padding: 6px 2px; }
+  .ruqi-ladder li:not(:last-child)::after { display: none; }
+}
 
 /* ===== Skills ===== */
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
