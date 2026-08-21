@@ -295,7 +295,7 @@
         print('  live: <a href="https://unimanager-sy.pages.dev" target="_blank" rel="noopener">unimanager-sy.pages.dev</a> · <a href="https://github.com/andrewleko19-boop/unimanager" target="_blank" rel="noopener">source</a>');
         print('<span class="accent">رُقِيّ / Ruqi</span> — a national-scale school attendance system I am building.');
         print('  teacher → school → directorate → ministry-level dashboard · PostgreSQL RLS · Syria map.');
-        print('  live: <a href="https://andrewleko19-boop.github.io/nsams/" target="_blank" rel="noopener">demo</a> · <a href="https://github.com/andrewleko19-boop/nsams" target="_blank" rel="noopener">source</a>');
+        print('  live: <a href="https://andrewleko19-boop.github.io/ruqi/" target="_blank" rel="noopener">demo</a> · <a href="https://github.com/andrewleko19-boop/ruqi" target="_blank" rel="noopener">source</a>');
       },
       stack: function () {
         print('frontend : vanilla JS, PWA, Service Workers, IndexedDB, Canvas, RTL/i18n');
