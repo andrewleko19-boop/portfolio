@@ -25,10 +25,10 @@ Colors are taken verbatim from the reference palette (cyan `#06b6d4`, purple, gr
 - **[UniManager](https://unimanager-sy.pages.dev)** — offline-first PWA for university students:
   schedule, a 7-system / 4-type GPA engine, real-time collaborative groups. Supabase + IndexedDB +
   service worker, bilingual AR/EN. ([source](https://github.com/andrewleko19-boop/unimanager))
-- **[رُقِيّ | Ruqi](https://andrewleko19-boop.github.io/nsams/)** — National School Attendance Monitoring
-  System for the Syrian Ministry of Education. Multi-portal (teacher → school → directorate → ministry)
-  on Supabase with PostgreSQL Row-Level Security, GitHub Actions CI/CD, Arabic RTL UI.
-  ([source](https://github.com/andrewleko19-boop/nsams))
+- **[رُقِيّ | Ruqi](https://andrewleko19-boop.github.io/nsams/)** — a national-scale, multi-portal school
+  attendance system I'm building (teacher → school → directorate → ministry-level dashboard) on Supabase
+  with PostgreSQL Row-Level Security, GitHub Actions CI/CD, and an Arabic RTL UI. A personal project, in
+  active development. ([source](https://github.com/andrewleko19-boop/nsams))
 
 ## Structure
 
